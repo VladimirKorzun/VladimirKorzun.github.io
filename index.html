@@ -1,9 +1,163 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Volodymyr Korzun</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volodymyr Korzun - Machine Learning Engineer</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #607d8b;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            border-bottom: 4px solid #455a64;
+            animation: fadeIn 1s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: slideUp 1s ease-out;
+        }
+        h2 {
+            color: #607d8b;
+            text-align: center;
+            margin-top: 20px;
+            border-bottom: 2px solid #455a64;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            animation: fadeIn 1s ease-out;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .mail-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #607d8b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .mail-button:hover {
+            background-color: #455a64;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        a {
+            color: #607d8b;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Volodymyr Korzun</h1>
-    <h5>Machine Learning Engineer</h5>
+
+    <header>
+        <h1>Volodymyr Korzun</h1>
+        <h3>Machine Learning Engineer</h3>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Welcome to my personal website! I am Volodymyr Korzun, a passionate machine learning engineer with expertise in transforming raw data into meaningful insights for better decision-making. My goal is to deliver high-quality solutions that leverage the power of machine learning to address complex challenges.</p>
+
+        <h2>Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Data Analysis</h3>
+                <p>Transforming raw data into meaningful insights for better decision-making.</p>
+            </div>
+            <div class="service">
+                <h3>Machine Learning Models</h3>
+                <p>Developing and deploying predictive models for various applications.</p>
+            </div>
+            <div class="service">
+                <h3>Consulting</h3>
+                <p>Providing expert advice on machine learning strategies and implementations.</p>
+            </div>
+        </div>
+
+        <h2>Portfolio</h2>
+        <p>Check out some of my notable projects:</p>
+        <!-- Add links to your projects here -->
+
+        <h2>Contact</h2>
+        <p>Ready to leverage the power of machine learning for your project? Feel free to reach out to me:</p>
+        <ul>
+            <li>Email: <a href="mailto:vladimir@korzun.nl">vladimir@korzun.nl</a></li>
+            <li>KVK-number: 90381122</li>
+            <li>Address: A.G. Verbeekstraat 13, 1501RL Zaandam, the Netherlands</li>
+        </ul>
+
+        <!-- Mail Me Button -->
+        <button class="mail-button" onclick="window.location.href='mailto:vladimir@korzun.nl'">Mail Me</button>
+    </section>
+
 </body>
 </html>
